@@ -1,9 +1,12 @@
 import React from "react";
 import passport from "../assets/passport.jpeg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faInstagram, faWhatsapp, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="mt-10">
       <h2 className="uppercase text-3xl text-orange-500 font-light mb-5 flex justify-center items-center">
         GET IN TOUCH
       </h2>
@@ -18,7 +21,14 @@ const Contact = () => {
             Reach out—let&apos;s make it happen!
           </p>
 
-          <h2>Connect with me</h2>
+          <h2 className="uppercase">Connect with me</h2>
+          <div className="flex gap-3 mt-5">
+            <FontAwesomeIcon icon={faInstagram} className=" p-4 rounded-full shadow-md cursor-pointer" />
+            <FontAwesomeIcon icon={faFacebook} className=" p-4 rounded-full shadow-md cursor-pointer" />
+            <FontAwesomeIcon icon={faXTwitter} className=" p-4 rounded-full shadow-md cursor-pointer" />
+            <FontAwesomeIcon icon={faWhatsapp} className=" p-4 rounded-full shadow-md cursor-pointer" />
+            <FontAwesomeIcon icon={faPhone} className=" p-4 rounded-full shadow-md cursor-pointer" />
+          </div>
         </div>
         <div className=" md:w-[70%]  mx-3 shadow-md rounded bg-slate-100 p-4">
           <form action="" className="flex flex-col text-gray-600">
