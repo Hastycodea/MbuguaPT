@@ -11,7 +11,7 @@ const Contact = () => {
         GET IN TOUCH
       </h2>
       <div className="flex flex-col  md:flex-row px-[5%] gap-8">
-        <div className="md:w-[30%]  p-4 shadow-md rounded flex flex-col items-center justify-center text-gray-600 font-light">
+        <div className="md:w-[30%]  p-4 shadow-md rounded flex flex-col items-center justify-center text-gray-600 font-light bg-slate-100">
           <img src={passport} alt="" className="w-[200px] rounded-full p-4" />
           <h2 className="text-gray-800 font-semibold text-lg">Brian Mbugua</h2>
           <p className="text-gray-800 font-normal mb-3">Personal Trainer & Bodybuilder</p>

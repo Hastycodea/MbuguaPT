@@ -1,6 +1,5 @@
 import React from "react";
 import bg from "../assets/trainer.jpeg";
-import about from "../assets/about.jpeg"
 
 const Hero = () => {
   return (
