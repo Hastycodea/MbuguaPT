@@ -3,7 +3,7 @@ import bg from "../assets/trainer.jpeg";
 
 const Hero = () => {
   return (
-    <div className="flex md:flex-row flex-col-reverse  items-center">
+    <div className="flex md:flex-row flex-col-reverse  items-center   mt-10">
       {/* className="bg-[url('./assets/trainer.jpg')] bg-cover bg-no-repeat" */}
       <section className="w-[100vw] md:w-[35%] hidden md:flex flex-col justify-center text-center md:text-left md:h-screen h-[50%] p-4   ">
         <h1 className="font-bold md:text-7xl text-3xl md:pb-4 pb-2">
