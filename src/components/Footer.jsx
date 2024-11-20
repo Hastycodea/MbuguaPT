@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="  text-[10px] flex md:flex-row flex-col  items-center justify-between md:mx-10 py-3 border outline-none  border-t-gray-400">
-        <p className="text-gray-500 mb-5 md:mb-0">© COPYRIGHT 2015. ALL RIGHTS RESERVED.</p>
+        <p className="text-gray-500 mb-5 md:mb-0">© COPYRIGHT 2024. ALL RIGHTS RESERVED.</p>
         <p className="md:text-base font-light">
           Website Design by Hastycode Andreh
         </p>
