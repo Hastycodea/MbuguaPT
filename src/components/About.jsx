@@ -3,7 +3,7 @@ import mbugua from "../assets/about.jpeg";
 
 const About = () => {
   return (
-    <div className="flex flex-col items-center justify-center my-0 md:my-10 md:px-[10%]">
+    <div className="about flex flex-col items-center justify-center my-0 md:my-10 md:px-[10%]">
       <h2 className="uppercase text-3xl text-orange-500 font-light mb-5">
         About Me
       </h2>

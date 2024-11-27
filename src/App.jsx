@@ -9,11 +9,11 @@ import Reasons from "./components/Reasons";
 function App() {
   return (
     <>
-      <Navbar />
+      <Navbar  />
       <Hero />
       <Reasons />
       <About />
-      <Contact />
+      <Contact /> 
       <Footer />
     </>
   );

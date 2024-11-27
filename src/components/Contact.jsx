@@ -6,7 +6,7 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   return (
-    <div className="mt-10">
+    <div className="contact mt-10">
       <h2 className="uppercase text-3xl text-orange-500 font-light mb-5 flex justify-center items-center">
         GET IN TOUCH
       </h2>
