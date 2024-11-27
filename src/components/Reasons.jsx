@@ -74,8 +74,7 @@ const Reasons = () => {
             ✓ Achieve, and maintain, your goals, even when life gets busy.
           </li>
           <li>
-            ✓ Boost your confidence and energy levels to feel great inside and
-            out.
+            ✓ Boost your confidence, energy, and aesthetics to feel great inside and out.
           </li>
         </ul>
       </div>

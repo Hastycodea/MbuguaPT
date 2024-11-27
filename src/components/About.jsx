@@ -15,7 +15,7 @@ const About = () => {
         />
         <div className="text-gray-600 leading-loose px-2  ">
           <p className="text-sm font-light md:leading-8  ">
-            I’m Mbugua, a dedicated personal trainer and bodybuilding competitor
+            I am Mbugua Mbuthi, a dedicated personal trainer and bodybuilding competitor
             with a proven track record of transforming lives. I’m passionate
             about my craft and specialize in helping busy men and women
             completely overhaul their health and fitness through a holistic and
@@ -24,7 +24,6 @@ const About = () => {
 
           <h2>What I Help You Achieve</h2>
           <ul className="text-sm font-light md:leading-8">
-            <li>Feel confident and attractive in any setting.</li>
             <li>
               Build physical and mental strength to tackle challenges
               effortlessly.

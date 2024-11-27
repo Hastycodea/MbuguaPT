@@ -1,12 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faInstagram,
-  faWhatsapp,
-  faXTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
@@ -40,17 +35,27 @@ const Footer = () => {
           <p>00 100,</p>
           <p>Kenya.</p>
 
-          <div className="flex items-start justify-end gap-2 mt-5 text-sm text-gray-800">
-            <FontAwesomeIcon icon={faInstagram} className="" />
-            <FontAwesomeIcon icon={faFacebook} className="" />
-            <FontAwesomeIcon icon={faXTwitter} className="" />
-            <FontAwesomeIcon icon={faWhatsapp} className="" />
-            <FontAwesomeIcon icon={faPhone} className="" />
+          <div className="flex items-center justify-end gap-2 mt-5 text-sm text-gray-800">
+            <a href="https://www.instagram.com/coach_mbugua/" target="_blank">
+              <FontAwesomeIcon icon={faInstagram} className="" />
+            </a>
+            {/* <a href="https://wa.me/<phone_number>" target="_blank">Chat on WhatsApp</a> */}
+            <a href="https://wa.me/254748951815" target="_blank">
+              <FontAwesomeIcon icon={faWhatsapp} className="" />
+            </a>
+            <a href="tel:+254748951815" target="_blank">
+              <FontAwesomeIcon icon={faPhone} className="" />
+            </a>
+            <a href="mailto:mbuguambuthi24@gmail.com" target="_blank">
+              <FontAwesomeIcon icon={faEnvelope} className="" />
+            </a>
           </div>
         </div>
       </div>
       <div className="  text-[10px] flex md:flex-row flex-col  items-center justify-between md:mx-10 py-3 border outline-none  border-t-gray-400">
-        <p className="text-gray-500 mb-5 md:mb-0">© COPYRIGHT 2024. ALL RIGHTS RESERVED.</p>
+        <p className="text-gray-500 mb-5 md:mb-0">
+          © COPYRIGHT 2024. ALL RIGHTS RESERVED.
+        </p>
         <p className="md:text-base font-light">
           Website Design by Hastycode Andreh
         </p>

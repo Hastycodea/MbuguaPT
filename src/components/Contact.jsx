@@ -1,8 +1,8 @@
 import React from "react";
 import passport from "../assets/passport.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faWhatsapp, faXTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   return (
@@ -13,8 +13,10 @@ const Contact = () => {
       <div className="flex flex-col  md:flex-row px-[5%] gap-8">
         <div className="md:w-[30%]  p-4 shadow-md rounded flex flex-col items-center justify-center text-gray-600 font-light bg-slate-100">
           <img src={passport} alt="" className="w-[200px] rounded-full p-4" />
-          <h2 className="text-gray-800 font-semibold text-lg">Brian Mbugua</h2>
-          <p className="text-gray-800 font-normal mb-3">Personal Trainer & Bodybuilder</p>
+          <h2 className="text-gray-800 font-semibold text-lg">Mbugua Mbuthi</h2>
+          <p className="text-gray-800 font-normal mb-3">
+            Personal Trainer & Bodybuilder
+          </p>
           <p className="mb-5">
             Have a fitness goal you want to achieve? Whether it&apos;s getting
             stronger, healthier, or more confident, I&apos;m here to guide you.
@@ -23,11 +25,30 @@ const Contact = () => {
 
           <h2 className="uppercase">Connect with me</h2>
           <div className="flex gap-3 mt-5">
-            <FontAwesomeIcon icon={faInstagram} className=" p-4 rounded-full shadow-md cursor-pointer" />
-            <FontAwesomeIcon icon={faFacebook} className=" p-4 rounded-full shadow-md cursor-pointer" />
-            <FontAwesomeIcon icon={faXTwitter} className=" p-4 rounded-full shadow-md cursor-pointer" />
-            <FontAwesomeIcon icon={faWhatsapp} className=" p-4 rounded-full shadow-md cursor-pointer" />
-            <FontAwesomeIcon icon={faPhone} className=" p-4 rounded-full shadow-md cursor-pointer" />
+            <a href="https://www.instagram.com/coach_mbugua/" target="_blank">
+              <FontAwesomeIcon
+                icon={faInstagram}
+                className=" p-4 rounded-full shadow-md cursor-pointer"
+              />
+            </a>
+            <a href="https://wa.me/254748951815">
+              <FontAwesomeIcon
+                icon={faWhatsapp}
+                className=" p-4 rounded-full shadow-md cursor-pointer"
+              />
+            </a>
+            <a href="tel:+254748951815" target="_blank">
+              <FontAwesomeIcon
+                icon={faPhone}
+                className=" p-4 rounded-full shadow-md cursor-pointer"
+              />
+            </a>
+            <a href="mailto:mbuguambuthi24@gmail.com" target="_blank">
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                className=" p-4 rounded-full shadow-md cursor-pointer"
+              />
+            </a>
           </div>
         </div>
         <div className=" md:w-[70%]  mx-3 shadow-md rounded bg-slate-100 p-4">
@@ -40,7 +61,6 @@ const Contact = () => {
                   placeholder="Enter your name"
                   id="name"
                   className="outline-none rounded p-4 mb-3"
-
                 />
               </div>
               <div className="flex flex-col">
@@ -75,7 +95,9 @@ const Contact = () => {
               placeholder="Enter your message here"
               id=""
             ></textarea>
-            <button className="uppercase p-4 bg-blue-500 text-white rounded">Send message</button>
+            <button className="uppercase p-4 bg-blue-500 text-white rounded">
+              Send message
+            </button>
           </form>
         </div>
       </div>
