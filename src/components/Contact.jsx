@@ -87,7 +87,8 @@ const Contact = () => {
               <div className="flex flex-col">
                 <label className="mb-2">Name</label>
                 <input
-                  type="text"
+                  type="name"
+                  name="name"
                   placeholder="Enter your name"
                   id="name"
                   className="outline-none rounded p-4 mb-3"
@@ -97,6 +98,7 @@ const Contact = () => {
                 <label className="mb-2">Phone Number</label>
                 <input
                   type="phone"
+                  name="phone"
                   placeholder="Enter your phone number"
                   id="name"
                   className="outline-none rounded p-4 mb-3"
@@ -106,6 +108,7 @@ const Contact = () => {
             <label className="mb-2">Email</label>
             <input
               type="email"
+              name="email"
               placeholder="Enter your email"
               id="name"
               className="outline-none rounded p-4 mb-3"
@@ -113,6 +116,7 @@ const Contact = () => {
             <label className="mb-2">Subject</label>
             <input
               type="text"
+              name="subject"
               placeholder="Enter your subject"
               id="name"
               className="outline-none rounded p-4 mb-3"
@@ -120,7 +124,7 @@ const Contact = () => {
             <label className="mb-2">Message</label>
             <textarea
               className="outline-none rounded p-[10px] mb-3"
-              name=""
+              name="mesaage"
               type="message"
               placeholder="Enter your message here"
               id=""
