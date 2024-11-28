@@ -5,7 +5,6 @@ import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
-
   const [result, setResult] = React.useState("");
 
   const onSubmit = async (event) => {
@@ -13,15 +12,15 @@ const Contact = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-      //     const res = await axios.get(
-      //     `https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=${import.meta.env.VITE_BOOKS_API}`
-      // );
+    //     const res = await axios.get(
+    //     `https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=${import.meta.env.VITE_BOOKS_API}`
+    // );
 
     formData.append("access_key", `${import.meta.env.VITE_SITE_API}`);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      body: formData
+      body: formData,
     });
 
     const data = await response.json();
@@ -33,7 +32,7 @@ const Contact = () => {
       console.log("Error", data);
       setResult(data.message);
     }
-  }
+  };
 
   return (
     <div className="contact mt-10">
@@ -82,7 +81,7 @@ const Contact = () => {
           </div>
         </div>
         <div className=" md:w-[70%]  mx-3 shadow-md rounded bg-slate-100 p-4">
-          <form onSubmit={onSubmit}  className="flex flex-col text-gray-600">
+          <form onSubmit={onSubmit} className="flex flex-col text-gray-600">
             <div className="flex flex-col md:flex-row gap-4">
               <div className="flex flex-col">
                 <label className="mb-2">Name</label>
@@ -129,11 +128,14 @@ const Contact = () => {
               placeholder="Enter your message here"
               id=""
             ></textarea>
-            <button type="submit" className="uppercase p-4 bg-blue-500 text-white rounded">
+            <span className="text-green-700">{result}</span>
+            <button
+              type="submit"
+              className="uppercase p-4 bg-blue-500 text-white rounded"
+            >
               Send message
             </button>
           </form>
-          <span>{result}</span>
         </div>
       </div>
     </div>
