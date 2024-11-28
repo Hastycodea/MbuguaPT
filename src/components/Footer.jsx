@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -20,13 +21,40 @@ const Footer = () => {
             <h2 className="text-base text-gray-800 font-light ">
               Useful Links
             </h2>
-            <p>About</p>
-            <p>Privacy Policy</p>
-            <p>Terms & Conditions</p>
+
+            <Link
+              to="hero"
+              smooth={true}
+              offset={-120}
+              duration={500}
+              className="cursor-pointer"
+            >
+              <p>Home</p>
+            </Link>
+            <Link
+              to="about"
+              smooth={true}
+              offset={-120}
+              duration={500}
+              className="cursor-pointer"
+            >
+              <p>About</p>
+            </Link>
+            <Link
+              to="works"
+              smooth={true}
+              offset={-80}
+              duration={500}
+              className="cursor-pointer"
+            >
+              <p>How it works</p>
+            </Link>
           </div>
           <div className="text-xs leading-loose">
             <h2 className="text-base text-gray-800 font-light ">Support</h2>
-            <p>Contact</p>
+            <Link to="contact" smooth={true} offset={-100} duration={500} className="cursor-pointer">
+              <p>Contact</p>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col text-right text-xs text-gray-500">

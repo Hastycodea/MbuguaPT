@@ -10,12 +10,13 @@ const Navbar = () => {
   return (
     <div className="navbar w-full fixed top-0 left-0 shadow-md z-10">
       <div className=" md:flex items-center justify-between pb-5 pt-2 px-5 bg-white">
-        <Link to="hero" smooth={true} duration={500} offset={-100}>
+        <Link to="hero" smooth={true} duration={500} offset={-100}  className="cursor-pointer">
           <img
             src={logo}
             alt=""
             className="md:w-48 w-28 pt-2 md:pt-0 object-contain cursor-pointer  "
           />
+          <p className="hidden md:block md:-mt-[3px] md:px-6 text-xs  text-gray-500 uppercase">Go Hard or Go Home</p>
         </Link>
 
         {/* Menu Icon */}
@@ -35,7 +36,7 @@ const Navbar = () => {
             open ? "top-12" : "top-[-600px]"
           } `}
         >
-          <Link to="hero" smooth={true} duration={500} offset={-100} >
+          <Link to="hero" smooth={true} duration={500} offset={-100}>
             <li className="uppercase md:outline outline-black outline-1 md:py-1 md:px-4 hover:text-slate-400 cursor-pointer transition-all duration-200">
               Home
             </li>
@@ -45,9 +46,11 @@ const Navbar = () => {
               about
             </li>
           </Link>
-          <li className="uppercase hover:text-slate-400 cursor-pointer transition-all duration-200 my-4 md:my-0">
-            how it works
-          </li>
+          <Link to="works" smooth={true} duration={500} offset={-80}>
+            <li className="uppercase hover:text-slate-400 cursor-pointer transition-all duration-200 my-4 md:my-0">
+              how it works
+            </li>
+          </Link>
           <li className="uppercase hover:text-slate-400 cursor-pointer transition-all duration-200 my-4 md:my-0">
             success stories
           </li>

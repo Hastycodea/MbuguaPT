@@ -15,9 +15,11 @@ const Hero = () => {
           lasting, dramatic results to your health, body and mind.
         </p>
         <div className="flex gap-8 md:mt-5 mt-2 items-center justify-center md:justify-start">
-          <button className="bg-orange-500 py-2 px-4 rounded text-white outline outline-orange-500 outline-1 hover:bg-transparent hover:text-orange-500 transition-all duration-200 text-xs">
-            START HERE
-          </button>
+          <Link to="works" smooth={true} duration={500} offset={-80}>
+            <button className="bg-orange-500 py-2 px-4 rounded text-white outline outline-orange-500 outline-1 hover:bg-transparent hover:text-orange-500 transition-all duration-200 text-xs">
+              START HERE
+            </button>
+          </Link>
 
           <Link to="contact" smooth={true} duration={500} offset={-110}>
             <button className="  py-2 px-4 rounded text-black outline outline-black  outline-1 hover:bg-slate-50  transition-all duration-200 text-xs">
@@ -41,9 +43,11 @@ const Hero = () => {
             lasting, dramatic results to your health, body and mind.
           </p>
           <div className="flex gap-8 md:mt-5 mt-2 items-center justify-center md:justify-start">
-            <button className="bg-orange-500 py-2 px-4 rounded text-white outline outline-orange-500 outline-1 hover:bg-transparent hover:text-orange-500 transition-all duration-200 text-xs">
-              START HERE
-            </button>
+            <Link to="works" smooth={true} duration={500} offset={-60}>
+              <button className="bg-orange-500 py-2 px-4 rounded text-white outline outline-orange-500 outline-1 hover:bg-transparent hover:text-orange-500 transition-all duration-200 text-xs">
+                START HERE
+              </button>
+            </Link>
 
             <Link to="contact" smooth={true} duration={500} offset={-110}>
               <button className="  py-2 px-4 rounded text-white outline outline-white  outline-1 hover:bg-slate-50  transition-all duration-200 text-xs">

@@ -12,9 +12,6 @@ const Contact = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    //     const res = await axios.get(
-    //     `https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=${import.meta.env.VITE_BOOKS_API}`
-    // );
 
     formData.append("access_key", `${import.meta.env.VITE_SITE_API}`);
 

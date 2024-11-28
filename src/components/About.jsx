@@ -14,7 +14,7 @@ const About = () => {
           className="w-[100%] md:w-6/12 md:h-[600px] h-[40vh] md:mx-4 rounded shadow mb-4 md:mb-0 object-left-top object-cover"
         />
         <div className="text-gray-600 leading-loose px-2  ">
-          <p className="text-sm font-light md:leading-8  ">
+          <p className="text-sm font-light md:leading-8">
             I am Mbugua Mbuthi, a dedicated personal trainer and bodybuilding competitor
             with a proven track record of transforming lives. I’m passionate
             about my craft and specialize in helping busy men and women
