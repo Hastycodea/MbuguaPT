@@ -42,7 +42,7 @@ const About = () => {
 
           <h2>What You Don’t Have to Do</h2>
           <ul className="text-sm font-light md:leading-8">
-            <li>Starve or diet.</li>
+            <li>Overtraining</li>
             <li>Count calories or weigh foods.</li>
             <li>Give up your favorite treats.</li>
             <li>Spend hours on cooking or exercise.</li>
