@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import bg from "../assets/trainer.jpeg";
 import { Link } from "react-scroll";
