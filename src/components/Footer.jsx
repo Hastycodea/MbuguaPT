@@ -84,8 +84,8 @@ const Footer = () => {
         <p className="text-gray-500 mb-5 md:mb-0">
           © COPYRIGHT 2024. ALL RIGHTS RESERVED.
         </p>
-        <p className="md:text-base font-light">
-          Website Design by Hastycode Andreh
+        <p className="md:text-xs text-gray-600 font-light">
+          Website Design by <span className="text-black font-semibold">Hastycode Andreh</span>
         </p>
       </div>
     </div>
